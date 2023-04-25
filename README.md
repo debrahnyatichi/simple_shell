@@ -1,5 +1,3 @@
-SIMPLE SHELL PROJECT.
-This is a group project of two collaborators.
-We will create a simple shell unix command interpreter from scratch and explain each lines of code in every task.
-It has a total of 17 tasks. TASK 0 to TASK 17.
-
+This is a group project by Deborah Binyanya and Kaytee G Umar.
+There are a total of 17tasks which we will handle step by step explaining our simple shell codes.
+Hope as we learn w ewill also make other outside parties learn as you go through the repository
