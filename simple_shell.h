@@ -45,5 +45,12 @@ void _rm_newline(char *str);
 int str_len(char *string);
 void str_cpy(char *src, char *dest);
 
+/*helper_functions_01*/
+int str_cmp(char *first, char *second);
+char *str_cat(char *dest, char *src);
+int str_spn(char *str_1, char *str_2);
+int str_c_spn(char *str_1, char *str_2);
+char *str_chr(char *s, char c);
+
 #endif
 
