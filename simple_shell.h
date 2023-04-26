@@ -52,5 +52,8 @@ int str_spn(char *str_1, char *str_2);
 int str_c_spn(char *str_1, char *str_2);
 char *str_chr(char *s, char c);
 
+/*builtin functions*/
+void show_environment_variables(char **arguments);
+void quit_shell(char **arguments);
 #endif
 

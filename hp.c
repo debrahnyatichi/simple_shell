@@ -12,7 +12,7 @@ char **split_string(char *input, char *delim)
 	int i, num_tokens = 0;
 	char **tokens = NULL, *token = Null, *save_ptr = NULL;
 
-	token = strtok_r(input, delim, &save_ptr);
+	token = strtok_r(input, deli, &save_ptr);
 	while (token != NULL)
 	{
 		num_tokens++;
@@ -66,17 +66,17 @@ void _rm_newline(char *str)
 
 /**
  * str_cpy - copires a string to another buffer
- * @src: source to copy from
+ * @source: source to copy from
  * @dest: destination to copy to
  * Return: void
  */
 
-void str_cpy(char *src, char *dest)
+void str_cpy(char *source, char *dest)
 {
 	int i;
 
-	for (i = 0; src[i]; i++)
-		dest[i] = src[i];
+	for (i = 0; source[i]; i++)
+		dest[i] = source[i];
 	dest[i] = '\0;
 }
 
