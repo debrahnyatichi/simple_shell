@@ -52,6 +52,13 @@ int str_spn(char *str_1, char *str_2);
 int str_c_spn(char *str_1, char *str_2);
 char *str_chr(char *s, char c);
 
+/*helper_functions_02*/
+char *str_tokr(char *str, char *delim, char **save_ptr);
+int convert_to_int(char *s);
+void *realloc_mem(void *ptr, unsigned int old_size, unsigned int new_size);
+void ctrl_c_handler(int sig_num);
+void rm_comment(char *input);
+
 /* Utility functions */
 int identify_command_type(char *comn);
 void execute_command(char **comn_args, int comn_type);
