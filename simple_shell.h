@@ -21,15 +21,15 @@
 #define minimum(x, y) (((x) < (y)) ? (x) : (y))
 
 /**
- * struct cmd_map - a struct that maps a command name to a function
- * @comn: name of the command
- * @fun: the function executed by the command
- */
+* struct cmd_map - a struct that maps a command name to a function
+* @comn: name of the command
+* @fun: the function executed by the command
+*/
 
 typedef struct cmd_map
 {
-	char *comn;
-	void (*fun)(char **arguments);
+char *comn;
+void (*fun)(char **arguments);
 } cmd_map;
 
 extern char **environ_variables;
@@ -52,8 +52,20 @@ int str_spn(char *str_1, char *str_2);
 int str_c_spn(char *str_1, char *str_2);
 char *str_chr(char *s, char c);
 
+/* Utility functions */
+int identify_command_type(char *comn);
+void execute_command(char **comn_args, int comn_type);
+char *search_path_for_command(char *comn_name);
+void (*get_command_function(char *comn_name))(char **arguments);
+char *get_environment_variable(char *variable_name);
+
 /*builtin functions*/
 void show_environment_variables(char **arguments);
 void quit_shell(char **arguments);
+
+/* Main functions */
+extern void run_shell_non_interactively(void);
+extern void initialize_shell(char **current_comn, int comn_type);
+
 #endif
 
